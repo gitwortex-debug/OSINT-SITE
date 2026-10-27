@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080b16">
+<title>OSINT RUSSIAN MILITARY</title>
+<style>
+:root{--bg:#080b16;--panel:rgba(19,27,49,.92);--blue:#59baff;--purple:#a78bfa;--text:#edf3ff;--muted:#9aa9c5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);background:var(--bg);font-family:system-ui,-apple-system,sans-serif;line-height:1.6}
+body:before{content:"";position:fixed;inset:-20%;z-index:-2;background:radial-gradient(ellipse at 15% 20%,#153b70 0,transparent 38%),radial-gradient(ellipse at 85% 55%,#39215d 0,transparent 35%),radial-gradient(ellipse at 50% 100%,#102b4b 0,transparent 38%);animation:glow 12s ease-in-out infinite alternate}
+@keyframes glow{from{transform:translate(-2%,-1%) scale(1)}to{transform:translate(2%,2%) scale(1.08)}}
+a{color:inherit;text-decoration:none}.wrap{width:min(1080px,92%);margin:auto}header{border-bottom:1px solid #263653;overflow:hidden}.topbar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 0}.brand{display:flex;align-items:center;gap:12px}.logo{display:grid;place-items:center;width:44px;height:44px;border:1px solid #4178bd;border-radius:13px;color:var(--blue);font-size:23px;box-shadow:0 0 22px #268bff20}.brand-name{font-size:13px;font-weight:800;letter-spacing:.5px}.brand-small{color:var(--muted);font-size:10px;letter-spacing:2px}.telegram{display:inline-flex;justify-content:center;align-items:center;gap:8px;background:linear-gradient(110deg,#247ce9,#7956e8);padding:11px 15px;border-radius:12px;font-weight:700;font-size:13px}
+.hero{padding:56px 0 48px}.tag{display:inline-block;border:1px solid #34517b;background:#14243b;color:#9dd3ff;padding:5px 10px;border-radius:30px;font-size:11px;letter-spacing:1.5px}h1{max-width:760px;margin:20px 0 14px;font-size:clamp(30px,7vw,58px);line-height:1.1;letter-spacing:-1.7px}.gradient{background:linear-gradient(90deg,#70c9ff,#b69aff);color:transparent;background-clip:text;-webkit-background-clip:text}.intro{max-width:670px;color:#bdcbe3;font-size:15px}.disclaimer{max-width:650px;margin-top:22px;border-left:3px solid var(--purple);padding:9px 14px;background:#a78bfa0b;color:#c7cbe0;font-size:12px}.wave{height:55px;opacity:.65;background:repeating-radial-gradient(ellipse at 50% 100%,transparent 0 15px,#4f8eea40 16px 17px,transparent 18px 28px);mask-image:linear-gradient(transparent,black)}
+main{padding:34px 0 65px}.section-head{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:15px;margin-bottom:18px}h2{margin:0;font-size:24px}.sub{color:var(--muted);font-size:12px;margin-top:4px}.search{margin:20px 0}.search input{width:100%;padding:14px 16px;border-radius:13px;border:1px solid #293958;outline:none;background:#11182a;color:white;font-size:14px}.search input:focus{border-color:var(--blue)}.tabs{display:flex;flex-wrap:wrap;gap:9px;margin:20px 0}.tab{cursor:pointer;padding:10px 14px;border:1px solid #293957;border-radius:11px;background:#10172a;color:#c4cee2;font:inherit;font-size:13px}.tab.active{color:white;border-color:#559eea;background:linear-gradient(110deg,#17436b,#38275e)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.card{min-width:0;overflow:hidden;border:1px solid #293957;border-radius:17px;background:var(--panel);transition:transform .2s,border-color .2s}.card:hover{transform:translateY(-3px);border-color:#638dcc}.video-frame{width:100%;aspect-ratio:16/9;background:#050914;display:block;border:0}.video-frame video{width:100%;height:100%;display:block;object-fit:contain;background:#050914}.video-frame iframe{width:100%;height:100%;display:block;border:0}.no-video{height:100%;min-height:190px;display:grid;place-items:center;text-align:center;padding:20px;color:#a8b8d3;background:radial-gradient(ellipse at center,#1a3153,#080b16 75%)}.play-icon{font-size:42px;color:#75c8ff;display:block}.card-content{padding:18px}.card-top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.category{color:#8dcaff;font-size:10px;letter-spacing:1px;text-transform:uppercase}.date{color:#7f90ad;font-size:11px}.card h3{margin:12px 0 8px;font-size:18px;line-height:1.35}.card p{margin:0;color:#aab8d0;font-size:13px;white-space:pre-line}.source{display:inline-block;margin-top:15px;color:#8ecaff;font-size:12px;font-weight:700}.empty{display:none;padding:24px 0;color:var(--muted)}.about{margin-top:38px;padding:24px;border:1px solid #303653;border-radius:18px;background:linear-gradient(120deg,#15223a,#211831)}.about p{color:#b6c2d9;font-size:13px}footer{border-top:1px solid #27344e;padding:25px 0;color:#8392ad;font-size:11px}.footer-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+@media(max-width:600px){.hero{padding:42px 0 34px}.grid{grid-template-columns:1fr}.brand-name{font-size:11px}.telegram{padding:10px;font-size:11px}.card-content{padding:16px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<nav class="topbar">
+<a class="brand" href="#"><span class="logo">⌘</span><span><span class="brand-name">OSINT RUSSIAN MILITARY</span><br><span class="brand-small">OPEN SOURCE INTELLIGENCE</span></span></a>
+<a class="telegram" href="https://t.me/wortexNEwSBU" target="_blank" rel="noopener noreferrer">↗ Telegram</a>
+</nav>
+<div class="hero"><span class="tag">НЕЗАВИСИМЫЙ OSINT-ПРОЕКТ</span>
+<h1>Факты. Источники.<br><span class="gradient">Аналитика.</span></h1>
+<p class="intro">Исследование открытых источников, проверка публичных сообщений и аналитические материалы о военной тематике.</p>
+<div class="disclaimer">🔹 Open Source Intelligence<br>Проект носит информационно-аналитический характер и не связан с военными структурами.</div>
+</div></div><div class="wave"></div></header>
+<main class="wrap">
+<div class="section-head"><div><h2>Материалы проекта</h2><div class="sub">Видео с описанием, публикации и исследования из открытых источников</div></div></div>
+<div class="search"><input id="search" type="search" placeholder="⌕  Поиск по публикациям..." aria-label="Поиск по публикациям"></div>
+<div class="tabs" role="group" aria-label="Категории публикаций">
+<button class="tab active" data-filter="all">Все материалы</button><button class="tab" data-filter="news">Новости / Видео</button><button class="tab" data-filter="geo">OSINT-геоаналитика</button>
+</div>
+<div class="grid" id="posts"></div><p class="empty" id="empty">Ничего не найдено. Попробуй другой запрос.</p>
+<section class="about"><h2>О проекте</h2><p>OSINT RUSSIAN MILITARY — независимый информационно-аналитический проект, посвящённый открытым источникам, проверке информации и изучению публичных материалов.</p><p>Публикации должны содержать ссылки на источники и отличать подтверждённые сведения от предположений. Не размещайте личные данные, оперативные координаты или сведения, способные подвергнуть людей непосредственной опасности.</p><a class="telegram" href="https://t.me/wortexNEwSBU" target="_blank" rel="noopener noreferrer">Перейти в Telegram ↗</a></section>
+</main>
+<footer><div class="wrap footer-row"><span>© <span id="year"></span> OSINT RUSSIAN MILITARY</span><span>Независимый проект · Открытые источники</span></div></footer>
+<script>
+const demoPosts = [
+ {category:"news",label:"Новости / Видео",date:"Демонстрация",title:"Пример публикации с видео",description:"Здесь под видео будет идти текст: краткое описание, контекст, что известно и что пока не подтверждено. Ниже можно добавить ссылку на первоисточник.",video:"https://www.w3schools.com/html/mov_bbb.mp4",source:"https://www.w3schools.com/html/html5_video.asp",sourceLabel:"Источник видео (демо) ↗"},
+ {category:"geo",label:"OSINT-геоаналитика",date:"Пример",title:"Как проверять открытые источники",description:"Указывайте дату публикации, автора или организацию, ссылку на исходный материал и отдельно отмечайте предположения. Этот пример можно заменить своей публикацией.",video:"",source:"https://t.me/wortexNEwSBU",sourceLabel:"Открыть Telegram ↗"}
+];
+const postsContainer=document.getElementById("posts"),search=document.getElementById("search"),empty=document.getElementById("empty");
+let allPosts=demoPosts,category="all";
+function safeUrl(value){try{const u=new URL(value,location.href);return ["https:","http:"].includes(u.protocol)?u.href:""}catch{return""}}
+function videoMarkup(post){
+ const url=safeUrl(post.video||"");
+ if(!url)return '<div class="video-frame"><div class="no-video"><div><span class="play-icon">▶</span>Видеоматериал<br><small>Видео можно добавить к публикации</small></div></div></div>';
+ if(/youtube\.com|youtu\.be|vimeo\.com/.test(url)){
+   let id="";
+   if(url.includes("youtu.be/"))id=url.split("youtu.be/")[1].split(/[?&]/)[0];
+   else if(url.includes("youtube.com"))id=new URL(url).searchParams.get("v")||"";
+   if(id)return `<div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}" title="Видеоплеер" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>`;
+   if(url.includes("vimeo.com")){const id2=url.split("vimeo.com/")[1].split(/[?&]/)[0];if(/^\d+$/.test(id2))return `<div class="video-frame"><iframe src="https://player.vimeo.com/video/${id2}" title="Видеоплеер" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen></iframe></div>`}
+ }
+ return `<div class="video-frame"><video controls preload="metadata" playsinline><source src="${url}" type="video/mp4">Ваш браузер не поддерживает видео.</video></div>`;
+}
+function render(){
+ const q=search.value.toLocaleLowerCase("ru").trim();let shown=0;
+ postsContainer.innerHTML="";
+ allPosts.forEach(post=>{
+  const text=[post.title,post.description,post.label,post.date].join(" ").toLocaleLowerCase("ru");
+  if((category!=="all"&&post.category!==category)||!text.includes(q))return;
+  shown++;
+  const card=document.createElement("article");card.className="card";
+  card.innerHTML=`${videoMarkup(post)}<div class="card-content"><div class="card-top"><span class="category"></span><span class="date"></span></div><h3></h3><p></p><a class="source" target="_blank" rel="noopener noreferrer"></a></div>`;
+  card.querySelector(".category").textContent=post.label||"Материал";
+  card.querySelector(".date").textContent=post.date||"";
+  card.querySelector("h3").textContent=post.title||"Без названия";
+  card.querySelector("p").textContent=post.description||"";
+  const link=card.querySelector(".source"),source=safeUrl(post.source||"");
+  if(source){link.href=source;link.textContent=post.sourceLabel||"Первоисточник ↗"}else link.remove();
+  postsContainer.appendChild(card);
+ });
+ empty.style.display=shown?"none":"block";
+}
+document.querySelectorAll(".tab").forEach(tab=>tab.addEventListener("click",()=>{category=tab.dataset.filter;document.querySelectorAll(".tab").forEach(t=>t.classList.toggle("active",t===tab));render()}));
+search.addEventListener("input",render);
+fetch("content/posts.json").then(r=>{if(!r.ok)throw Error("No posts file");return r.json()}).then(data=>{if(Array.isArray(data.posts)&&data.posts.length)allPosts=data.posts}).catch(()=>{}).finally(render);
+document.getElementById("year").textContent=new Date().getFullYear();
+</script>
+</body></html>
